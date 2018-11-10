@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Promedio de notas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Promedio de notas</h1>
+        <form method="POST" action="Ejercicio1Respuesta.php">
+            <p>
+                <label>Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombres y apellidos" required>
+            </p>
+            <p>
+                <label>Ingrese la nota #1</label>
+                <input type="text" pattern="([0-4]\.[0-9])|(5\.0)" name="nota1" placeholder="Ingrese un valor entre 0.0 y 5.0" required>
+                <br>
+                <label>Ingrese la nota #2</label>
+                <input type="text" pattern="([0-4]\.[0-9])|(5\.0)" name="nota2" placeholder="Ingrese un valor entre 0.0 y 5.0" required>
+                <br>
+                <label>Ingrese la nota #2</label>
+                <input type="text" pattern="([0-4]\.[0-9])|(5\.0)" name="nota3" placeholder="Ingrese un valor entre 0.0 y 5.0" required>
+            </p>
+            <p>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+        <footer>
+            <p>
+                <a href="../index.php">Volver al indice</a>
+            </p>
+        </footer>
+    </body>
+</html>

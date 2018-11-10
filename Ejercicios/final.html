@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Libreria El Analfabeta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div>            
+            <div id="formulario">                
+                <hr id="barra">
+                <h1>Compra de productos</h1>
+                <label>Complete los datos y selecciona los productos que desea llevar</label>
+                <hr>
+                <form method="POST" target="_blank" action="recibo.php">
+                    <table>
+                        <tr>
+                            <th colspan="2" align="left"><b>Nombre</b></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="nombre" required></td>
+                            <td><input type="text" name="apellidos" required></td>                    
+                        </tr>
+                        <tr>
+                            <td><label>Primer nombre</label></td>
+                            <td><label>Apellidos</label></td>
+                        </tr>
+                    </table>
+                    <p>
+                        <label><b>Cédula</b></label><br>                                
+                        <input type="text" pattern="[0-9]{1,12}" required>
+                    </p>
+                    <p>
+                        <label><b>Libros</b></label><br>
+                        <input type="checkbox" name="libro1">La Odisea $20000<br>
+                        <input type="checkbox" name="libro2">El Conde de Montecristo $35000<br>
+                        <input type="checkbox" name="libro3">Viaje al Centro de la Tierra $55000<br>
+                        <input type="checkbox" name="libro4">Cumbres Borrascosas $75000<br>
+                        <input type="checkbox" name="libro5">Romeo y Julieta $15000<br>
+                        <input type="checkbox" name="libro6">Cien años de soledad $65000<br>
+                    </p>
+                    <p>
+                        <label><b>Modo de Pago</b></label><br>
+                        <select name="metodoPago">
+                            <option value="efectivo">Efectivo</option>
+                            <option value="debito">Tarjeta débito</option>
+                            <option value="credito">Tarjeta crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+                    </p>
+                    <input type="submit" value="Comprar">
+                </form>
+                <p>Prueba Introduccion PHP</p>
+            </div>
+        </div>
+        <footer>
+            <p>
+                <a href="../index.php">Volver al indice</a>
+            </p>
+        </footer>
+    </body>
+</html>
